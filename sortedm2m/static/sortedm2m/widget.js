@@ -1,4 +1,7 @@
-$ = django.jQuery;
+$ = jQuery;
+if ($ === 'undefined') {
+    $ = django.jQuery;
+}
 
 $('.sortedm2m-container').find('.sortedm2m-items').addClass('hide');
 function prepareUl(ul) {
